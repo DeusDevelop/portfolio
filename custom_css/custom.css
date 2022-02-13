@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Raleway", "Open Sans";
+  color: #232323;
+}
+
+.masthead {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/Laptop_hands_grey.jpg);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../images/Laptop_hands_grey.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/Laptop_hands_grey.jpg);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../images/Laptop_hands_grey.jpg);
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.masthead h1,
+.masthead h3 {
+  text-transform: uppercase;
+}
+
+.masthead .btn {
+  border: 3px solid #232323;
+  border-radius: 0;
+}
+
+.masthead .btn-primary {
+  color: #232323;
+  font-weight: 800;
+  background-color: #23232300;
+}
+
+.masthead .btn-primary:hover {
+  color: #EBEBEB;
+  font-weight: 800;
+  background-color: #232323;
+}
+/*# sourceMappingURL=custom.css.map */
