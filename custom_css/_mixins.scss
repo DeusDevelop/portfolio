@@ -1,0 +1,16 @@
+@mixin btn {
+  border: 3px solid $main_color;
+  border-radius: 0;
+}
+
+@mixin btn_primary {
+  color: $text_color;
+  font-weight: 800;
+  background-color: $main_trans;
+  &:hover {
+    color: $text_light;
+    font-weight: 800;
+    background-color: $main_color;
+    border: 3px solid $main_color;
+  }
+}

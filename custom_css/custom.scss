@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
-
+/* IMPORTS */
+@import "mixins";
 @import "variables";
 
 * {
   font-family: "Raleway", "Open Sans";
-  color: $color_eerie_black;
+  color: $text_color;
 }
+.btn {
+  @include btn;
+}
+.btn-primary {
+  @include btn_primary;
+}
+/* MAIN HEADER */
 .masthead {
   background: linear-gradient(
       90deg,
@@ -25,18 +33,34 @@
   h3 {
     text-transform: uppercase;
   }
-  .btn {
-    border: 3px solid $color_eerie_black;
-    border-radius: 0;
+}
+/* END OF MAIN HEADER*/
+/* =========================================================== */
+/* MENU */
+.menu-toggle {
+  background: none;
+  border: 1px solid $main_color;
+  &:hover {
+    background: $main_color;
   }
-  .btn-primary {
-    color: $color_eerie_black;
-    font-weight: 800;
-    background-color: $color_transparent_black;
+  path {
+    fill: $text_color;
     &:hover {
-      color: $color_platinum;
-      font-weight: 800;
-      background-color: $color_eerie_black;
+      fill: $text_light;
     }
-  }
+  } // Ovo još treba rešiti !!!
+}
+#sidebar-wrapper {
+  background: $main_color;
+}
+.sidebar-nav li.sidebar-nav-item a {
+  color: $text_light;
+}
+/* MENU END */
+/* ### ABOUT SECTION ### */
+.about-section {
+  min-height: 100vh;
+}
+.bg-light {
+  background-color: $text_light !important;
 }

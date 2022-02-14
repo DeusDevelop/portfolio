@@ -1,9 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+/* IMPORTS */
 * {
   font-family: "Raleway", "Open Sans";
   color: #232323;
 }
 
+.btn {
+  border: 3px solid #232323;
+  border-radius: 0;
+}
+
+.btn-primary {
+  color: #232323;
+  font-weight: 800;
+  background-color: #23232300;
+}
+
+.btn-primary:hover {
+  color: #ebebeb;
+  font-weight: 800;
+  background-color: #232323;
+  border: 3px solid #232323;
+}
+
+/* MAIN HEADER */
 .masthead {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/Laptop_hands_grey.jpg);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../images/Laptop_hands_grey.jpg);
@@ -18,20 +38,41 @@
   text-transform: uppercase;
 }
 
-.masthead .btn {
-  border: 3px solid #232323;
-  border-radius: 0;
+/* END OF MAIN HEADER*/
+/* =========================================================== */
+/* MENU */
+.menu-toggle {
+  background: none;
+  border: 1px solid #232323;
 }
 
-.masthead .btn-primary {
-  color: #232323;
-  font-weight: 800;
-  background-color: #23232300;
+.menu-toggle:hover {
+  background: #232323;
 }
 
-.masthead .btn-primary:hover {
-  color: #EBEBEB;
-  font-weight: 800;
-  background-color: #232323;
+.menu-toggle path {
+  fill: #232323;
+}
+
+.menu-toggle path:hover {
+  fill: #ebebeb;
+}
+
+#sidebar-wrapper {
+  background: #232323;
+}
+
+.sidebar-nav li.sidebar-nav-item a {
+  color: #ebebeb;
+}
+
+/* MENU END */
+/* ### ABOUT SECTION ### */
+.about-section {
+  min-height: 100vh;
+}
+
+.bg-light {
+  background-color: #ebebeb !important;
 }
 /*# sourceMappingURL=custom.css.map */
