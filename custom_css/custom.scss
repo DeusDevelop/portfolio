@@ -13,6 +13,9 @@
 .btn-primary {
   @include btn_primary;
 }
+strong {
+  color: $power_color;
+}
 /* MAIN HEADER */
 .masthead {
   background: linear-gradient(
@@ -45,22 +48,49 @@
   }
   path {
     fill: $text_color;
-    &:hover {
+    &:active {
       fill: $text_light;
     }
-  } // Ovo još treba rešiti !!!
+  }
+  &:hover path {
+    fill: $text_light;
+  }
 }
 #sidebar-wrapper {
   background: $main_color;
+}
+.sidebar-nav > .sidebar-brand {
+  background: $text_light;
+  a {
+    color: $text_color;
+    &:hover {
+      color: $power_color;
+    }
+  }
 }
 .sidebar-nav li.sidebar-nav-item a {
   color: $text_light;
 }
 /* MENU END */
+
 /* ### ABOUT SECTION ### */
 .about-section {
   min-height: 100vh;
 }
 .bg-light {
   background-color: $text_light !important;
+}
+
+/* ### SERVICES SECTION ### */
+.bg-primary {
+  background-color: $main_color !important;
+}
+.content-section-heading {
+  .text-secondary {
+    color: $power_color !important;
+  }
+  .services {
+    color: $text_light;
+    text-transform: uppercase;
+  }
 }

@@ -23,6 +23,10 @@
   border: 3px solid #232323;
 }
 
+strong {
+  color: #d4b068;
+}
+
 /* MAIN HEADER */
 .masthead {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/Laptop_hands_grey.jpg);
@@ -54,12 +58,28 @@
   fill: #232323;
 }
 
-.menu-toggle path:hover {
+.menu-toggle path:active {
+  fill: #ebebeb;
+}
+
+.menu-toggle:hover path {
   fill: #ebebeb;
 }
 
 #sidebar-wrapper {
   background: #232323;
+}
+
+.sidebar-nav > .sidebar-brand {
+  background: #ebebeb;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #232323;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #d4b068;
 }
 
 .sidebar-nav li.sidebar-nav-item a {
@@ -74,5 +94,19 @@
 
 .bg-light {
   background-color: #ebebeb !important;
+}
+
+/* ### SERVICES SECTION ### */
+.bg-primary {
+  background-color: #232323 !important;
+}
+
+.content-section-heading .text-secondary {
+  color: #d4b068 !important;
+}
+
+.content-section-heading .services {
+  color: #ebebeb;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=custom.css.map */
