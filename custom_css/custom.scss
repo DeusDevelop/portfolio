@@ -16,7 +16,8 @@
 strong {
   color: $power_color;
 }
-/* MAIN HEADER */
+/* ========================================================= */
+/* ###========================== MAIN HEADER ==========================### */
 .masthead {
   background: linear-gradient(
       90deg,
@@ -32,6 +33,7 @@ strong {
     url(../images/Laptop_hands_grey.jpg);
   background-position-x: center;
   background-position-y: center;
+  background-attachment: fixed;
   h1,
   h3 {
     text-transform: uppercase;
@@ -39,7 +41,7 @@ strong {
 }
 /* END OF MAIN HEADER*/
 /* =========================================================== */
-/* MENU */
+/* ###========================== MENU ==========================### */
 .menu-toggle {
   background: none;
   border: 1px solid $main_color;
@@ -73,15 +75,17 @@ strong {
 }
 /* MENU END */
 
-/* ### ABOUT SECTION ### */
+/* ###========================== ABOUT SECTION ==========================### */
 .about-section {
   min-height: 100vh;
 }
 .bg-light {
   background-color: $text_light !important;
 }
-
-/* ### SERVICES SECTION ### */
+h2 > span {
+  color: $power_color;
+}
+/* ###========================== SERVICES SECTION ==========================### */
 .bg-primary {
   background-color: $main_color !important;
 }
@@ -94,3 +98,23 @@ strong {
     text-transform: uppercase;
   }
 }
+.service-icon {
+  background-color: $text_light;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6.25rem;
+  transition: 0.3s;
+  margin-bottom: 2rem !important;
+  &:hover {
+    transform: scale(0.9, 0.9);
+  }
+  path {
+    fill: $main_color;
+    transition: 0.3s;
+  }
+  &:hover path {
+    fill: $power_color;
+    transform: scale(0.9, 0.9);
+  }
+}
+/* ###========================== SERVICES SECTION ==========================### */

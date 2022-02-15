@@ -14,6 +14,8 @@
   color: #232323;
   font-weight: 800;
   background-color: #23232300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .btn-primary:hover {
@@ -27,7 +29,8 @@ strong {
   color: #d4b068;
 }
 
-/* MAIN HEADER */
+/* ========================================================= */
+/* ###========================== MAIN HEADER ==========================### */
 .masthead {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url(../images/Laptop_hands_grey.jpg);
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../images/Laptop_hands_grey.jpg);
@@ -35,6 +38,7 @@ strong {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(../images/Laptop_hands_grey.jpg);
   background-position-x: center;
   background-position-y: center;
+  background-attachment: fixed;
 }
 
 .masthead h1,
@@ -44,7 +48,7 @@ strong {
 
 /* END OF MAIN HEADER*/
 /* =========================================================== */
-/* MENU */
+/* ###========================== MENU ==========================### */
 .menu-toggle {
   background: none;
   border: 1px solid #232323;
@@ -87,7 +91,7 @@ strong {
 }
 
 /* MENU END */
-/* ### ABOUT SECTION ### */
+/* ###========================== ABOUT SECTION ==========================### */
 .about-section {
   min-height: 100vh;
 }
@@ -96,7 +100,11 @@ strong {
   background-color: #ebebeb !important;
 }
 
-/* ### SERVICES SECTION ### */
+h2 > span {
+  color: #d4b068;
+}
+
+/* ###========================== SERVICES SECTION ==========================### */
 .bg-primary {
   background-color: #232323 !important;
 }
@@ -109,4 +117,33 @@ strong {
   color: #ebebeb;
   text-transform: uppercase;
 }
+
+.service-icon {
+  background-color: #ebebeb;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6.25rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 2rem !important;
+}
+
+.service-icon:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.service-icon path {
+  fill: #232323;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-icon:hover path {
+  fill: #d4b068;
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+/* ###========================== SERVICES SECTION ==========================### */
 /*# sourceMappingURL=custom.css.map */
